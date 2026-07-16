@@ -18,6 +18,14 @@ const getUser=(userid,username)=>({
     id:userid,
     name:username,role:"admin"
 })
+function loginUser(email){
+    if(!email)
+        throw new Error('enter an email')
+    return {
+        id:1,email
+    }
+}
+
 module.exports={
-    checknm,sayHello,getNames,getUser
+    checknm,sayHello,getNames,getUser,loginUser
 }

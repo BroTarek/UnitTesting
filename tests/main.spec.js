@@ -1,4 +1,4 @@
-const {checknm,sayHello,getNames,getUser}= require("../src/main")
+const {checknm,sayHello,getNames,getUser,loginUser}= require("../src/main")
 
 describe("checknm",()=>{
 
