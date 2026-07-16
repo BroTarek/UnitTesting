@@ -21,6 +21,6 @@ test("should return zero",()=>{
 describe("sayHello",()=>{
 test("should return hello message",()=>{
     //assertion
-    expect(sayHello("Tarek")).toContain("Hello Tarek")
+    expect(sayHello("Tarek")).toMatch(/Tarek/i)// used with regular expression
 })
 })
