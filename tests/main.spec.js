@@ -1,4 +1,4 @@
-const {checknm}= require("../src/main")
+const {checknm,sayHello}= require("../src/main")
 
 describe("checknm",()=>{
 
@@ -13,5 +13,14 @@ test("should return the number in negative",()=>{
 test("should return zero",()=>{
   const res=checknm(0);
   expect(res).toBe(0);
+})
+})
+
+// i can use it() instead of test()
+
+describe("sayHello",()=>{
+test("should return hello message",()=>{
+    //assertion
+    expect(sayHello("Tarek")).toContain("Hello Tarek")
 })
 })

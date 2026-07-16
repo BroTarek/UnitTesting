@@ -7,8 +7,11 @@ function checknm(nm){
     return 0
 }
 
+function sayHello(name){
+  return `Hello ${name} , how are you`
+}
 // you should check the excution paths o f the unit you are tetsing , here there are 3 excution paths. There must be at least a test for each paths 
 
 module.exports={
-    checknm,
+    checknm,sayHello
 }
