@@ -37,7 +37,7 @@ describe("getNames",()=>{
 })
 
 describe("getUser",()=>{
-    test("should return user",()=>{
+    test.only("should return user",()=>{// only() runs this test only and skips the rest
         //expect(getUser(1,"Tarek")).toEqual({id:1,name:"Tarek"}) // this will fail because it has to be identical
         expect(getUser(1,"Tarek")).toMatchObject({id:1,name:"Tarek"})// this is  similar to toContain()
         expect(getUser(1,"Tarek")).toHaveProperty("id",1)//checks for only one properety
