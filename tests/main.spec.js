@@ -36,7 +36,7 @@ describe("getNames",()=>{
     })
 })
 
-describe.skip("getUser",()=>{// skips this test only 
+describe("getUser",()=>{// skips this test only 
     test("should return user",()=>{
         //expect(getUser(1,"Tarek")).toEqual({id:1,name:"Tarek"}) // this will fail because it has to be identical
         expect(getUser(1,"Tarek")).toMatchObject({id:1,name:"Tarek"})// this is  similar to toContain()
