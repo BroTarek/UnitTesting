@@ -1,4 +1,4 @@
-const {checknm,sayHello}= require("../src/main")
+const {checknm,sayHello,getNames}= require("../src/main")
 
 describe("checknm",()=>{
 
@@ -23,4 +23,15 @@ test("should return hello message",()=>{
     //assertion
     expect(sayHello("Tarek")).toMatch(/Tarek/i)// used with regular expression
 })
+})
+
+
+describe("getNames",()=>{
+    test("should return an array of names",()=>{
+        expect(getNames()).toEqual(expect.arrayContaining(["Ali"]))
+        expect(getNames()).toHaveLength(3)
+        expect(getNames()).toBeDefined();
+        expect(getNames()).not.toBeNull()
+        
+    })
 })
