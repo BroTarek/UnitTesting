@@ -14,7 +14,10 @@ function getNames(){
   return ["Ali","Tarek","Mostafa"]
 }
 // you should check the excution paths o f the unit you are tetsing , here there are 3 excution paths. There must be at least a test for each paths 
-
+const getUser=(userid,username)=>({
+    id:userid,
+    name:username,role:"admin"
+})
 module.exports={
-    checknm,sayHello,getNames
+    checknm,sayHello,getNames,getUser
 }
